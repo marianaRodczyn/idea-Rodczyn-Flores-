@@ -1,0 +1,382 @@
+/*
+
+
+header h1{
+    background-color: aquamarine;
+    color: burlywood;
+    text-align: start;
+    font-size: 50px;
+    font-family:'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif; 
+
+}
+
+
+
+.pasta{
+    
+    height: 400px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-style: ridge;
+
+}
+
+ nav ul li {
+    background-color: blanchedalmond;
+    width: 100px;
+    height: 50px;px;
+    display: inline-flex;
+    padding: 5px;
+    margin: 5px;
+    align-items: flex-end;
+
+
+
+}
+
+a{
+    color: peru;
+    text-decoration: none;
+    font-family:'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif; 
+    
+}*/
+/*estilos del contenedor principal
+.colores {
+    display: flex;
+    flex-wrap: wrap;
+}
+.plato{
+    display: flex;
+    height: 750px;
+    justify-content: right;
+}
+  
+
+
+h2{
+    color: peru;
+    text-align: center;
+    font-size: 35px;
+    font-family:'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif; 
+    margin: 50px;
+}
+
+nav ol li{
+    list-style: none;
+    font-size: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;;
+    text-align: center;
+    color: peru;
+    font-size: 28px;
+}
+
+h3{
+    font-size:'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif; 
+    color: peru;
+    color: peru;
+    text-align: center;
+    font-size: 28px;
+    font-family:'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif; 
+    margin: 50px;
+}
+
+span{
+    font-size: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: peru;
+
+}
+.enlace{
+    font-size:25px;
+    text-align: center;
+}
+
+h4{
+    font-size:'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif ;
+    color: burlywood;
+    font-size: 10px;
+    text-align: center;
+}
+/* seccion pastas frescas
+
+
+
+.pastasfrescas{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+/*seccion cocina casera productos
+
+.casero{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*seccion servicio de catering
+
+.plato{
+    display:flex;
+    justify-content: space-around;
+    height: 250px;
+}
+
+.texto{
+    text-align: center;
+    font-size: 25px;
+    font-size:'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif ;
+    color:rgb(232, 169, 86);
+}
+
+/*seccion formulario
+
+fieldset{
+    text-align: center;
+    font-size: 25px;
+    font-size:'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif ;
+    color:rgb(232, 169, 86);
+}*/
+
+
+
+/*PROBANDO GRID
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*BODY
+
+body{
+    background-color: bisque;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav {
+    margin: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    list-style: none;
+    background-color: whitesmoke;
+    padding:4px;
+    border-radius: 1rem;
+}*/
+/*
+
+.importanteP{
+    display: grid;
+    grid-template-areas: "coloresF  nosotrosM";
+                         
+    justify-content: center;
+                        
+}
+ 
+.platoR{
+    height: 500px;
+    margin: 5px;
+    justify-content: flex-end;
+
+}*/
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+body{ 
+    background-color: rgb(249, 228, 228);
+}
+
+html{
+    text-align: center;
+    font-size: 32px;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.contenedor {
+    gap: 0.5rem; 
+    min-height: 880px;
+    align-items: center;
+    justify-content: center;
+    background-color: rosybrown;
+    margin: auto 0; 
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-rows: 10% 65% 5% 25%;
+    grid-template-areas: "header header header header"
+                         "aside aside main main"
+                         "div div div div"
+                         "footer footer footer footer";
+} 
+
+/* ESTILOS HEADER */
+
+header{
+    height: 5rem;
+    background-color: rgb(252, 226, 193);
+    grid-area: header;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+header h1{
+    text-align: left;
+    padding: 1rem;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    padding: 10px;
+    background-color: rgb(250, 241, 223);
+    list-style: none;
+    margin: 30px;
+    text-decoration-line: none;
+    border: 0.1rem solid white;
+    border-radius: 0.4rem;
+    font-size: 0.5rem;
+    
+}
+
+main{
+    height: 533px;
+    grid-area: main;
+    background-color: white;
+    font-size: 0.6rem;
+    padding: 2.5rem;
+
+}
+main nav ol li {
+    list-style: none;
+    margin: 00.5rem;
+
+}
+
+main p{
+    font-size: 0.6rem;
+    margin: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+aside{
+    grid-area: aside;
+    
+}
+
+aside img{
+    width: 100%;
+    display: grid;
+    border:  0.5rem solid white ;
+    height: 16.7rem;
+
+}
+
+div{
+    background-color: white;
+    grid-area: div;
+    height: 1rem;
+    text-align: center;
+    font-size: 00.5rem;
+}
+
+footer{
+    background-color: white;
+    grid-area: footer;
+    font-size: 00.5rem;
+    height: 1rem;
+    
+
+}
+
+/* MEDIA QUERIES
+
+
+
+@media screen and (min-width:1024px) {
+
+     body{
+        background-color: green;
+     }
+     
+.contenedor {
+    
+        grid-template-areas: "header header header"
+                             "aside main main"
+                             "div div div"
+                             "footer footer footer";
+                            }
+                 
+    
+    
+    }    */
+
+    @media screen and (max-width:768px){
+        body{
+            background-color: blue;
+        }
+
+
+        img{
+            display: block;
+            width: 100%;
+        }
+        .contenedor {
+            width: 100%;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(4, auto);
+            grid-template-areas: "header "
+                                 "main "
+                                 "aside"
+                                 "div "
+                                 "footer";
+                          
+        }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
