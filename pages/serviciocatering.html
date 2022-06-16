@@ -10,14 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans&display=swap" rel="stylesheet">
     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <!--link de mi css-->
     <link rel="stylesheet" href="../css/styles.css">
     <title> Servicio catering</title>
 </head>
 <body>
-    <header>
-        <h1>El manà</h1>
-        <nav>
+
+    <div class="container">
+
+    <header class="row">
+        <h1 class="col-4">El manà</h1>
+        <nav class="col-8">
             <ul>
                 <li class="uno">
                     <a href="../index.html">
@@ -43,17 +48,41 @@
         </nav>
     </header>
 
-    <main >
+
+    <div id="carouselExampleInterval calecita " class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner col">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="/img/catering/descarga.jfif" class="d-block w-500" alt="foto de catering">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/img/plato.jpg" class="d-block w-500" alt="foto de pastas ">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/sorrentinos.jpg" class="d-block w-500" alt="foto de plato con pastas">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+  <!-- <main >
         <h2> Conoce nuestro servivio de catering</h2>
         <img src="/img/catering/descarga.jfif" alt="imagen de un catering"class="plato" >
-    </main>
-    <div class="texto">
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex totam animi perferendis consectetur praesentium sit fugit debitis sint architecto, maiores molestias non, minus quae id harum delectus rerum commodi impedit.
+    </main>  -->  
+    <main class="row">
+        <p class="col m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex totam animi perferendis consectetur praesentium sit fugit debitis sint architecto, maiores molestias non, minus quae id harum delectus rerum commodi impedit.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ab cupiditate. Tenetur, molestiae, quia accusantium aspernatur tempora, ut et quos quod alias at magnam reiciendis perspiciatis sed? Hic, tenetur laborum.</p>
-    </div>
+        </main>
 
-   
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
     
 </body>
 </html>
