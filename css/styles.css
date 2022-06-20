@@ -226,6 +226,8 @@ p{
     min-height: 880px;
     align-items: center;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+
     background-color: rosybrown;
     margin: auto 0; 
     display: grid;
@@ -235,6 +237,7 @@ p{
                          "aside aside main main"
                          "div div div div"
                          "footer footer footer footer";
+
 } 
 
 /* ESTILOS HEADER */
@@ -244,20 +247,23 @@ header{
     background-color: rgb(252, 226, 193);
     grid-area: header;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
- 
+    font-family: 'Montserrat', sans-serif;
+   
 }
 
 header h1{
     text-align: left;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgb(83, 60, 60);
 }
 
 nav ul {
     display: flex;
+
 }
 
 header nav ul li {
@@ -269,6 +275,9 @@ header nav ul li {
     border: 0.1rem solid white;
     border-radius: 0.4rem;
    font-size: 0.5rem;
+   justify-content: center;
+   align-items: center;
+   
     
 }
 
@@ -325,11 +334,20 @@ footer{
 
 /* MEDIA QUERIES*/
 
+    @media screen and (max-width:1023px){
+       
+        .contenedor {
+            width: 100%;
+            grid-template-columns: repeat(2, auto);
+            
+        }
+
+}
+
     @media screen and (max-width:768px){
         body{
             background-color: blue;
         }
-
 
         img{
             display: block;
@@ -344,6 +362,8 @@ footer{
                                  "aside"
                                  "div "
                                  "footer";
+            
+
                           
         }
     }
@@ -353,7 +373,7 @@ footer{
 
 header h1:hover {
     
-font-size: 3.5rem;
+font-size: 2rem;
 }
 
 .uno:hover {
